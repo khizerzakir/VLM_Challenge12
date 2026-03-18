@@ -5,10 +5,6 @@ from typing import Any, Dict, List, Optional
 from PIL import Image
 import streamlit as st
 
-
-# -----------------------------
-# Replace this with your actual local VLM call
-# -----------------------------
 def classify_with_vlm(image: Image.Image, labels: List[str]) -> Dict[str, Any]:
     """
     Dummy classifier so the app works before the real local VLM is connected.
@@ -57,8 +53,8 @@ def parse_labels(label_text: str) -> List[str]:
 # -----------------------------
 # UI
 # -----------------------------
-st.set_page_config(page_title="Local VLM Image Classifier", page_icon="🖼️", layout="centered")
-st.title("🖼️ Local VLM Image Classification")
+st.set_page_config(page_title="ELLIS Challenge VLM Image Classifier", page_icon="/icon.png", layout="centered")
+st.title("ELLIS Challenge VLM Image Classification Application")
 st.caption("Upload an image, choose candidate labels, and classify with your local Visual Language Model.")
 
 with st.sidebar:
